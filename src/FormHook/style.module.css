@@ -1,0 +1,14 @@
+.form{
+    display: flex;
+    flex-wrap: wrap;
+}
+.inputGroup{
+    width: 50%;
+    padding:10px 20px;
+}
+.buttonGroup{
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
