@@ -43,7 +43,7 @@ function Form(props) {
 
 		setUser(props.selectedUser);
 		console.log("user ham useEffect", user);
-	}, [props.selectedUser]);
+	}, [props.selectedUser,errors]);
 
 	const handleChange = (e) => {
 		return setUser({ ...user, [e.target.name]: e.target.value });
@@ -95,6 +95,7 @@ function Form(props) {
 	// reset form
 	const resetForm = () => {
 		setUser({ maSV: "", name: "", email: "", phone: "" });
+		setErrors({})
 	};
 
 	return (

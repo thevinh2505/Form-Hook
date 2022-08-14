@@ -3,6 +3,7 @@ import Form from "./Form";
 import UserList from "./UserList";
 
 import { useState } from "react";
+import SearchTable from "./SearchTable";
 
 function Home() {
 	const [userList, setUserList] = useState([]);
@@ -50,6 +51,7 @@ function Home() {
 				updateUser={updateUser}
 			/>
 			<UserList getInfoUser={getInfoUser} userList={userList} deleteUser={deleteUser} />
+			<SearchTable userList={userList}/>
 		</div>
 	);
 }
